@@ -1,0 +1,14 @@
+{
+  "name": "aws-codepipeline-s3-codedeploy-linux",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "echo 'Starting...'",
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
