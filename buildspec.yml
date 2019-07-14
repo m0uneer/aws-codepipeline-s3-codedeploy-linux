@@ -1,0 +1,38 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Install dependencies needed for running tests
+      - npm install
+
+      # Upgrade AWS CLI to the latest version
+      - pip3 install --upgrade awscli
+
+  pre_build:
+    commands:
+      - rm -rf dist
+
+      # We need to copy those file to set the default configs. DB and other config are set using env vars.
+      # @TODO
+      # Check our server for example
+
+  build:
+    commands:
+      # Build Code
+      - npm run build
+
+  post_build:
+    commands:
+      # Discover and run unit tests
+      - npm test
+
+      # Remove existing node_modules to clear dev dependencies
+      - rm -r node_modules
+
+      # Install runtime dependencies
+      - npm install --production
+
+artifacts:
+  files:
+    - dist/**
