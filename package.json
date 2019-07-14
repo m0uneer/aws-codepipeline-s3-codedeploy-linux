@@ -2,13 +2,18 @@
   "name": "aws-codepipeline-s3-codedeploy-linux",
   "version": "0.0.1",
   "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "start": "echo 'Starting...'",
+    "start": "echo 'Starting...'"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://gitlab.com/djaty/djaty-common#README",
   "dependencies": {
+    "winston": "^3.0.0"
   },
   "devDependencies": {
+    "@types/winston": "^2.3.9"
   }
 }
