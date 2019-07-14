@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "start": "echo 'Starting...'"
+    "start": "echo 'Starting...'",
+    "build": "echo 'Building...'"
+    "test": "echo 'Testing...'"
   },
   "author": "",
   "license": "ISC",
