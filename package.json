@@ -6,7 +6,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "start": "echo 'Starting...'",
-    "build": "echo 'Building...'",
+    "build": "echo 'Building...' && mkdir dist && touch dist/myFiles.x",
     "test": "echo 'Testing...'"
   },
   "author": "",
