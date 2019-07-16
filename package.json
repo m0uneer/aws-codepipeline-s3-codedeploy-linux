@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "application.js",
   "scripts": {
-    "start": "echo 'Starting...' && pm2 start --env production && pm2 logs djaty-test-deployment",
+    "start": "echo 'Starting...' && pm2 start --env production && pm2 logs djaty-test-deployment && pm2 status",
     "build": "echo 'Building...' && mkdir dist && touch dist/myFiles.x",
     "test": "echo 'Testing...'"
   },
